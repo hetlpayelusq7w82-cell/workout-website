@@ -19,7 +19,7 @@ document.getElementById("workoutForm").addEventListener("submit", async function
   document.getElementById("result").classList.remove("hidden");
 
   try {
-    const response = await fetch("https://your-site-name.netlify.app/.netlify/functions/ai-workout", {
+    const response = await fetch("https://playful-sunflower-af2b05.netlify.app/.netlify/functions/ai-workout", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ prompt })
